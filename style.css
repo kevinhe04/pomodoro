@@ -8,6 +8,7 @@
     position: relative;
     background-image: url("/images/girl.jpg");
     background-size: cover;
+    min-height: 100vh;
   }
   .container {
     width: min(90%, 500px);
@@ -89,10 +90,62 @@
     margin-top:35%;
     margin-left:20px;
   }
-.toggle {
-  position: absolute; 
-  bottom: 130px;
-  right: 150px;
-  padding: 0;
-  background-color: transparent;
+  .toggle {
+    position: absolute; 
+    bottom: 130px;
+    right: 150px;
+    padding: 0;
+    background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+  }
+
+  #time {
+      font-size: 4em; /* Smaller font size for the timer */
+  }
+
+  .section-container, .btn-container, .time-btn-container {
+      flex-direction: column;
+      gap: 0.5em;
+  }
+
+  .btn {
+      font-size: 12px;
+      padding: 0.8em 1.5em;
+  }
+
+  .video {
+    margin-top: 25%; /* Adjust top margin for tablet screens */
+    margin-left: 10px; /* Adjust left margin for better positioning */
+    /* Add any other necessary adjustments for tablet layout */
+    max-width: 100%;
+
+}
+
+  .toggle {
+      bottom: 20px;
+      right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      padding: 3em 1.5em;
+  }
+
+  #time {
+      font-size: 3em; /* Even smaller font size for smaller devices */
+
+  }
+  .video {
+    margin-top: 7%; /* Further reduce top margin for mobile screens */
+    margin-left: 5px; /* Reduce left margin for smaller screens */
+    width: 99%;
+    align-self: auto;
+    /* Consider adjusting width and height if necessary */
+  }
 }
