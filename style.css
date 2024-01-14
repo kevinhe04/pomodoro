@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .page{
+    position: relative;
+    background-image: url("/images/girl.jpg");
+    background-size: cover;
+  }
+  .container {
+    width: min(90%, 500px);
+    position: absolute;
+    transform: translate(-50%, -60%);
+    top: 45%;
+    left: 50%;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+    
+  }
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .section-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+  .btn {
+    padding: 1em 2em;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+
+  .btn:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .btn:focus{
+    background-color: white;
+    color: black;
+  }
+  .time-btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  #time {
+    text-align: center;
+    color: #ffffff;
+    font-size: 7em;
+    font-weight: 600;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  #btn-start,
+  #btn-pause {
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  #btn-reset {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 2em;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .video{
+    margin-top:32%;
+    margin-left:20px;
+  }
+.toggle {
+  position: fixed; 
+  bottom: 100px;
+  right: 150px;
+  padding: 0;
+  background-color: transparent;
+}
