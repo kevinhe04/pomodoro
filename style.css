@@ -86,12 +86,12 @@
     display: block;
   }
   .video{
-    margin-top:32%;
+    margin-top:35%;
     margin-left:20px;
   }
 .toggle {
-  position: fixed; 
-  bottom: 100px;
+  position: absolute; 
+  bottom: 130px;
   right: 150px;
   padding: 0;
   background-color: transparent;

@@ -22,6 +22,7 @@ reset.addEventListener(
   "click",
   (resetTime = () => {
     pauseTimer();
+    active = "focus"; // Add this line to reset to "focus"
     switch (active) {
       case "long":
         minCount = 14;
@@ -37,6 +38,7 @@ reset.addEventListener(
     time.textContent = `${minCount + 1}:00`;
   })
 );
+
 
 const removeFocus = () => {
   buttons.forEach((btn) => {
@@ -115,10 +117,6 @@ document.querySelector('.toggle').addEventListener('click', function() {
       // Enter fullscreen mode
       if (container.requestFullscreen) {
           container.requestFullscreen();
-      } else if (container.webkitRequestFullscreen) { // Safari
-          container.webkitRequestFullscreen();
-      } else if (container.msRequestFullscreen) { // IE11
-          container.msRequestFullscreen();
       }
   } else {
       // Exit fullscreen mode
